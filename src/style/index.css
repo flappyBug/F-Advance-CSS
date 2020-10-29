@@ -18,3 +18,18 @@ ul {
   margin: 0;
   padding: 0;
 }
+
+nav {
+  background-color: black;
+}
+
+nav a {
+  color: lightgray;
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 100px;
+}
