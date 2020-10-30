@@ -13,6 +13,16 @@ body {
   box-sizing: border-box;
 }
 
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+header {
+  width: 100%;
+}
+
 ul {
   list-style: none;
   margin: 0;
@@ -32,4 +42,83 @@ nav ul {
   display: flex;
   justify-content: space-between;
   padding: 20px 100px;
+}
+
+.content {
+  padding-top: 36px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+main {
+  height: 740px;
+  width: 640px;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  margin: 0 20px;
+}
+
+aside {
+  width: 200px;
+}
+
+aside h1 {
+  font-style: italic;
+}
+
+.card:nth-child(2n + 1) {
+  order: 1;
+}
+
+.card:nth-child(2n) {
+  order: 2;
+}
+
+.card {
+  padding: 10px;
+  width: 302px;
+  border: lightgray 1px solid;
+  border-radius: 4px;
+  margin: 10px;
+  margin-top: 20px;
+  box-shadow: 3px 3px 10px lightgray;
+}
+
+.thumbnail {
+  margin-left: -10px;
+  margin-top: -10px;
+  width: 300px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card h1 {
+  margin-bottom: 0;
+}
+
+.card p {
+  margin-top: 0;
+}
+
+.card a {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.login {
+  align-self: center;
+}
+
+footer {
+  width: 100%;
+  background-color: #f9f9f9;
+  text-align: center;
+  color: gray;
+  padding: 1.2rem;
+}
+
+footer p {
+  margin: 0.5rem;
 }
