@@ -44,13 +44,6 @@ nav ul {
   padding: 20px 100px;
 }
 
-.content {
-  padding-top: 36px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-}
-
 main {
   height: 740px;
   width: 640px;
@@ -62,10 +55,20 @@ main {
 
 aside {
   width: 200px;
+  margin-top: 20px;
+}
+
+aside > section {
+  padding: 1.5rem 1rem;
 }
 
 aside h1 {
   font-style: italic;
+  font-size: 1.6rem;
+}
+
+.about {
+  background-color: #f8f9fa;
 }
 
 .card:nth-child(2n + 1) {
@@ -105,10 +108,43 @@ aside h1 {
 .card a {
   display: block;
   margin-bottom: 1rem;
+  color: #157ffb;
 }
 
 .login {
   align-self: center;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+#email {
+  margin-bottom: 0;
+  border-radius: 4px 4px 0 0;
+  border: lightgray 1px solid;
+  padding: 0.5rem;
+}
+
+#password {
+  margin-top: -1px;
+  border-radius: 0 0 4px 4px;
+  border: lightgray 1px solid;
+  padding: 0.5rem;
+}
+
+.remember-me {
+  margin: 10px auto;
+  width: fit-content;
+}
+
+.sign-in {
+  width: 100%;
+  font-size: large;
+  background-color: #157ffb;
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 6px;
 }
 
 footer {
@@ -116,7 +152,7 @@ footer {
   background-color: #f9f9f9;
   text-align: center;
   color: gray;
-  padding: 1.2rem;
+  padding: 1rem;
 }
 
 footer p {
